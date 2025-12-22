@@ -255,6 +255,8 @@
             font-size: 14px;
             font-weight: 500;
             color: var(--primary-text);
+            text-align: center;
+            width: 100%;
         }
 
         .dark-mode .avatar-name {
@@ -3441,13 +3443,15 @@
             document.addEventListener('click', function(e) {
                 if (domCache.emojiPanel.classList.contains('active') && 
                     !domCache.emojiPanel.contains(e.target) && 
-                    !domCache.emojiBtn.contains(e.target)) {
+                    !domCache.emojiBtn.contains(e.target) &&
+                    domCache.messageInput && !domCache.messageInput.contains(e.target)) {
                     domCache.emojiPanel.classList.remove('active');
                 }
                 
                 if (domCache.imagePanel.classList.contains('active') && 
                     !domCache.imagePanel.contains(e.target) && 
-                    !domCache.imageBtn.contains(e.target)) {
+                    !domCache.imageBtn.contains(e.target) &&
+                    domCache.messageInput && !domCache.messageInput.contains(e.target)) {
                     domCache.imagePanel.classList.remove('active');
                 }
             });
