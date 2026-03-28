@@ -22,20 +22,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
 
-    <style id="css-live-preview-style">
-        #splash-declaration {
-            display: none !important;
-        }
-        #tour-overlay {
-            display: none !important;
-        }
-        #session-manager-btn {
-            display: none !important;
-        }
-        #group-chat-btn {
-            display: none !important;
-        }
-    </style>
+    <style id="css-live-preview-style"></style>
 </head>
 <body>
 <div id="splash-declaration">
